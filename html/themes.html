@@ -17,17 +17,16 @@
         }
 
         .section {
-            padding: 2rem;
+            padding: 4rem;
             display: grid;
             place-items: center;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
+            gap: 2rem;
         }
 
         @media only screen and (max-width: 768px) {
             .section {
                 padding: 1rem;
-
                 grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             }
         }
@@ -46,13 +45,12 @@
         }
 
         .back-btn:hover {
-            background-color: #b1cfc5;
             color: orangered;
         }
 
         @media (max-width: 760px) {
             .back-btn {
-                font-size: 0.5rem;
+                font-size: 0.8rem;
             }
         }
 
@@ -92,19 +90,19 @@
     </style>
     <body>
         <section class="section">
-            <a href="module.html">
+            <a href="first.html">
                 <button class="button button-violet">Thème 1</button>
             </a>
-            <a href="BOUTON 2.html">
+            <a href="seond.html">
                 <button class="button button-rose">Thème 2</button>
             </a>
-            <a href="BOUTON 3.html">
+            <a href="third.html">
                 <button class="button button-green">Thème 3</button>
             </a>
-            <a href="BOUTON 4.html">
+            <a href="fourth.html">
                 <button class="button button-yellow">Thème 4</button>
             </a>
-            <a href="BOUTON 5.html">
+            <a href="fifth.html">
                 <button class="button button-orange">Thème 5</button>
             </a>
         </section>
