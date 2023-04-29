@@ -25,6 +25,8 @@ echo "Input string is: $input_str"
 
 git add -p
 
+git add .
+
 echo "Commiting"; 
 git commit -m "$input_str";
 

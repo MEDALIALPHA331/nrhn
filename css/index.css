@@ -1,7 +1,9 @@
 :root {
     --primary-clr: #fff;
     --secondary-clr: #fff;
-    --bkg-img-url: url("../assets/images/bkgs/letters-green.png");
+    --bkg-img-url: url("../assets/images/bkgs/chalkboard-with-kids.png");
+    --clr-gradient-1: #f2709c;
+    --clr-gradient-2: #ff9472;
 }
 
 body {
@@ -15,7 +17,8 @@ body {
 }
 
 .experimental-btn {
-    /* display: none; */
+    display: none;
+    /*Remove this to change images*/
     font-size: 12px;
     font-weight: 400;
     padding: .125rem .5rem;
@@ -44,20 +47,45 @@ body {
 
 .start-btn {
     text-decoration: none;
-    font-size: 12px;
     font-weight: 400;
-    padding: .5rem 1rem;
+    padding: 1rem 2rem;
     color: #fff;
-    background-color: orangered;
     border: none;
     border-radius: 2rem;
-    transition: all 200ms ease-in-out;
+    /* background-color: orangered; */
+    /* transition: background-color 0.5s ease; */
+    position: relative;
+    background-image: linear-gradient(to right,
+            orangered,
+            orangered);
+    z-index: 1;
 }
 
-.start-btn:hover,
-.start-btn:active {
+.start-btn::before {
+    position: absolute;
+    content: '';
+    border-radius: 2rem;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom,
+            var(--clr-gradient-1),
+            var(--clr-gradient-2));
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+}
+
+.start-btn:hover {
     cursor: pointer;
 }
+
+.start-btn:hover::before {
+    opacity: 1;
+}
+
+
 
 .heading {
     font-family: 'Comic Neue', sans-serif;
@@ -68,4 +96,17 @@ body {
     align-items: center;
     justify-content: center;
     margin-bottom: 2rem;
+}
+
+.heading-gen {
+    background: linear-gradient(to bottom right, var(--clr-gradient-1), var(--clr-gradient-2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.heading-second {
+    font-size: 14px;
+    color: var(--clr-gradient-2);
 }
