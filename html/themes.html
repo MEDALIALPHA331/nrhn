@@ -36,12 +36,17 @@
             text-decoration: none;
             background-color: orangered;
             color: #fff;
-            font-size: 1.5rem;
-            padding: 1rem 2rem;
-            left: 2rem;
-            bottom: 1rem;
-            border-radius: 2rem;
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            left: 1.5rem;
+            bottom: 0.7rem;
+            border-radius: 1.5rem;
             transition: all 0.5s ease-in-out;
+        }
+
+        .back-btn img {
+            width: 2rem;
+            fill: #000;
         }
 
         .back-btn:hover {
@@ -54,7 +59,8 @@
             }
         }
 
-        button {
+        .button {
+            text-decoration: none;
             border: none;
             border-radius: 0.7rem;
             color: #fff;
@@ -63,14 +69,13 @@
             transition: all 0.3s ease;
         }
 
-        button:hover {
+        .button:hover {
             cursor: pointer;
             background-color: orangered;
         }
 
         .button-violet {
             background-color: #8b5393;
-            /* Red */
         }
         .button-rose {
             background-color: #ee2e8e;
@@ -90,23 +95,25 @@
     </style>
     <body>
         <section class="section">
-            <a href="first.html">
-                <button class="button button-violet">Thème 1</button>
+            <a class="button button-violet" href="./themes/first.html">
+                Thème 1
             </a>
-            <a href="seond.html">
-                <button class="button button-rose">Thème 2</button>
+            <a class="button button-rose" href="./themes/second.html">
+                Thème 2
             </a>
-            <a href="third.html">
-                <button class="button button-green">Thème 3</button>
+            <a class="button button-green" href="./themes/third.html">
+                Thème 3
             </a>
-            <a href="fourth.html">
-                <button class="button button-yellow">Thème 4</button>
+            <a class="button button-yellow" href="./themes/fourth.html">
+                Thème 4
             </a>
-            <a href="fifth.html">
-                <button class="button button-orange">Thème 5</button>
+            <a class="button button-orange" href="./themes//first.html">
+                Thème 5
             </a>
         </section>
 
-        <a class="back-btn" href="../index.html">Arrière</a>
+        <a class="back-btn" href="../index.html">
+            <img src="../assets/icons/backarrowsvg.svg" alt="" />
+        </a>
     </body>
 </html>

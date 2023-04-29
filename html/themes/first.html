@@ -4,32 +4,94 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Théme 1</title>
+        <link rel="stylesheet" href="../../css/main.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            body {
+                background: url("../../assets/images/bkgs/empty-scholl-bkg.png");
+                background-position: center;
+                background-size: cover;
+                height: 100vh;
+            }
+
+            h1 {
+                font-family: "Comic Neue", sans-serif;
+                color: #fff;
+                font-size: 2.5rem;
+                text-align: center;
+            }
+
+            .mod {
+                color: white;
+                background-color: #8b5393;
+                text-decoration: none;
+                border: none;
+                border-radius: 0.7rem;
+                font-size: 1.5rem;
+                padding: 1.5rem 2.5rem;
+                transition: all 0.3s ease;
+            }
+
+            .mod:hover {
+                color: #8b5393;
+                cursor: pointer;
+                background-color: white;
+            }
+
+            .mods {
+                display: flex;
+                height: 100%;
+                min-height: 100%;
+                display: flex;
+                justify-content: center;
+                place-items: center;
+                flex-direction: column;
+                gap: 2rem;
+            }
+
+            .back-btn {
+                position: fixed;
+                text-decoration: none;
+                background-color: orangered;
+                color: #fff;
+                font-size: 1rem;
+                padding: 0.5rem 1rem;
+                left: 1.5rem;
+                bottom: 0.7rem;
+                border-radius: 1.5rem;
+                transition: all 0.5s ease-in-out;
+            }
+
+            .back-btn img {
+                width: 2rem;
+            }
+
+            .back-btn:hover {
+                color: orangered;
+            }
+
+            @media (max-width: 760px) {
+                .back-btn {
+                    font-size: 0.8rem;
+                }
+            }
+        </style>
     </head>
     <body>
-        <div class="button-container">
-            <a href="ecole.html"><button>école</button></a>
-            <a href="cour.html"><button class="button-rose">Cour</button></a>
-            <a href="mariem.html"><button class="button-green">ZOO</button></a>
-            <a href="bille.html"
-                ><button class="button-yellow">Billes</button></a
-            >
-            <a href="corde.html"
-                ><button class="button-orange">Corde</button></a
-            >
-            <a href="maitre.html"
-                ><button class="button-blue">Maitre</button></a
-            >
-            <a href="ecolier.html"
-                ><button class="button-blue">écolier</button></a
-            >
-            <a href="mot.html"><button class="button-blue">Cloche</button></a>
-            <a href="ardoise.html"
-                ><button class="button-blue">Ardoise</button></a
-            >
-            <a href="cantine.html"
-                ><button class="button-blue">Cantine</button></a
-            >
+        <h1>Les Modules</h1>
+        <div class="mods">
+            <a class="mod" href="./chapters/vive-ecole.html">1. Vive l'école</a>
+            <a class="mod" href="cour.html">2. Bienvenue chez les duvals</a>
+
+            <a class="back-btn" href="../index.html">
+                <img src="../../assets/icons/backarrowsvg.svg" alt="" />
+            </a>
         </div>
     </body>
 </html>
