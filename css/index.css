@@ -1,0 +1,49 @@
+:root {
+    --primary-clr: #fff;
+    --secondary-clr: #fff;
+    --bkg-img-url: url("../assets/images/bkgs/circular-background.png");
+    --bkg-img-url-alt: url("../assets/images/bkgs/children-buttom.png");
+}
+
+body {
+    background-image: var(--bkg-img-url);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+.experimental-btn {
+    /* display: none; */
+    font-size: 12px;
+    font-weight: 400;
+    padding: .125rem .5rem;
+    color: #fff;
+    background-color: teal;
+    border: none;
+    border-radius: 2rem;
+    position: fixed;
+    right: .5rem;
+    top: .5rem;
+}
+
+.experimental-btn:hover,
+.experimental-btn:active {
+    cursor: pointer;
+}
+
+.main {
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.start-btn {}
+
+.start-btn:hover,
+.start-btn:active {}
