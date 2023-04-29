@@ -2,9 +2,113 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <link rel="stylesheet" href="../css/main.css" />
+        <title>themes</title>
+
+        <link rel="stylesheet" href="code.css" />
     </head>
-    <body></body>
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            background-image: url("/assets/images/bkgs/circular-background.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .section {
+            padding: 2rem;
+            display: grid;
+            place-items: center;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .section {
+                padding: 1rem;
+
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+        }
+
+        .back-btn {
+            position: fixed;
+            text-decoration: none;
+            background-color: orangered;
+            color: #fff;
+            font-size: 1.5rem;
+            padding: 1rem 2rem;
+            left: 2rem;
+            bottom: 1rem;
+            border-radius: 2rem;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .back-btn:hover {
+            background-color: #b1cfc5;
+            color: orangered;
+        }
+
+        @media (max-width: 760px) {
+            .back-btn {
+                font-size: 0.5rem;
+            }
+        }
+
+        button {
+            border: none;
+            border-radius: 0.7rem;
+            color: #fff;
+            font-size: 1.5rem;
+            padding: 1.5rem 2.5rem;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: orangered;
+        }
+
+        .button-violet {
+            background-color: #8b5393;
+            /* Red */
+        }
+        .button-rose {
+            background-color: #ee2e8e;
+            /* Green */
+        }
+        .button-green {
+            background-color: #15ed22;
+            /* Blue */
+        }
+        .button-yellow {
+            background-color: #eff227;
+            /* Blue */
+        }
+        .button-orange {
+            background-color: #f29627;
+        }
+    </style>
+    <body>
+        <section class="section">
+            <a href="module.html">
+                <button class="button button-violet">Thème 1</button>
+            </a>
+            <a href="BOUTON 2.html">
+                <button class="button button-rose">Thème 2</button>
+            </a>
+            <a href="BOUTON 3.html">
+                <button class="button button-green">Thème 3</button>
+            </a>
+            <a href="BOUTON 4.html">
+                <button class="button button-yellow">Thème 4</button>
+            </a>
+            <a href="BOUTON 5.html">
+                <button class="button button-orange">Thème 5</button>
+            </a>
+        </section>
+
+        <a class="back-btn" href="../index.html">Arrière</a>
+    </body>
 </html>

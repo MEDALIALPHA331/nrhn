@@ -1,19 +1,26 @@
 :root {
     --primary-clr: #fff;
     --secondary-clr: #fff;
-    --bkg-img-url: url("../assets/images/bkgs/chalkboard-with-kids.png");
+    --bkg-img-url-desk: url("../assets/images/bkgs/chalkboard-with-kids.png");
+    --bkg-img-url-phone: url("../assets/images/bkgs/circular-background.png");
     --clr-gradient-1: #f2709c;
     --clr-gradient-2: #ff9472;
 }
 
 body {
-    background-image: var(--bkg-img-url);
+    background-image: var(--bkg-img-url-desk);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     font-size: 16px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
+}
+
+@media (max-width: 760px) {
+    body {
+        background-image: var(--bkg-img-url-phone);
+    }
 }
 
 .experimental-btn {
@@ -81,6 +88,8 @@ body {
     cursor: pointer;
 }
 
+@media (max-width: 760px) {}
+
 .start-btn:hover::before {
     opacity: 1;
 }
@@ -96,17 +105,30 @@ body {
     align-items: center;
     justify-content: center;
     margin-bottom: 2rem;
+    text-align: center;
 }
+
+
 
 .heading-gen {
     background: linear-gradient(to bottom right, var(--clr-gradient-1), var(--clr-gradient-2));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 .heading-second {
-    font-size: 14px;
+    font-size: 1.25rem;
     color: var(--clr-gradient-2);
+}
+
+@media (max-width: 760px) {
+    .heading-gen {
+        font-size: 2rem;
+    }
+
+    .heading-second {
+        font-size: 14px;
+    }
 }
