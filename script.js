@@ -11,7 +11,7 @@ const second_url = [
 
 let current = 0;
 switch_btn.onclick = () => {
-    current = current === 0 ? 1 : 0;
+    current = current === second_url.length - 1 ? 0 : current + 1;
     //TODO: Maybe add transitions
     root.setProperty("--bkg-img-url", second_url[current]);
 };
