@@ -5,6 +5,246 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
+
+        <style>
+            body {
+                font-family: "Poppins", sans-serif;
+            }
+            .ch-one {
+                padding: 1rem 2rem;
+            }
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            td,
+            th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+
+            thead {
+                text-align: center;
+            }
+
+            .obj {
+                width: 30px;
+                aspect-ratio: 1;
+            }
+
+            .play-btn {
+                background: none;
+                border: none;
+            }
+
+            .play-btn:hover,
+            .play-btn:active {
+                cursor: pointer;
+            }
+
+            .play-btn svg {
+                width: 25px;
+                height: 25px;
+            }
+        </style>
     </head>
-    <body></body>
+    <body>
+        <section class="ch-one">
+            <table>
+                <thead>
+                    Chapitre Un
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Image</th>
+                        <th>Écouter</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button>école</button>
+                        </td>
+                        <td>
+                            <img
+                                class="obj"
+                                src="../../../assets/images/objets/ecole.png"
+                                alt="ecole"
+                            />
+                        </td>
+
+                        <td class="player">
+                            <button class="play-btn" id="play">
+                                <svg
+                                    version="1.1"
+                                    viewBox="0 0 91 91"
+                                    xml:space="preserve"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M45.501,3.171c-23.379,0-42.332,18.952-42.332,42.33c0,23.38,18.953,42.328,42.332,42.328    c23.38,0,42.33-18.948,42.33-42.328C87.831,22.123,68.881,3.171,45.501,3.171z M33,66.425v-41.85l33.068,20.926L33,66.425z"
+                                        fill="#F4767A"
+                                    />
+                                </svg>
+                            </button>
+                            <audio
+                                id="ecole-audio"
+                                src="../../../assets/sounds/ecole.mp3"
+                            ></audio>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <button>écolier</button>
+                        </td>
+                        <td>
+                            <img
+                                class="obj"
+                                src="../../../assets/images/objets/ecolier.png"
+                                alt="écolier"
+                            />
+                        </td>
+
+                        <td class="player">
+                            <button class="play-btn" id="play">
+                                <svg
+                                    version="1.1"
+                                    viewBox="0 0 91 91"
+                                    xml:space="preserve"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M45.501,3.171c-23.379,0-42.332,18.952-42.332,42.33c0,23.38,18.953,42.328,42.332,42.328    c23.38,0,42.33-18.948,42.33-42.328C87.831,22.123,68.881,3.171,45.501,3.171z M33,66.425v-41.85l33.068,20.926L33,66.425z"
+                                        fill="#F4767A"
+                                    />
+                                </svg>
+                            </button>
+                            <audio
+                                src="../../../assets/sounds/écolier.mp3"
+                            ></audio>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h4>Cantine</h4>
+                        </td>
+                        <td>
+                            <img
+                                class="obj"
+                                src="../../../assets/images/objets/cantine.png"
+                                alt="cantine"
+                            />
+                        </td>
+
+                        <td class="player">
+                            <button class="play-btn" id="play">
+                                <svg
+                                    version="1.1"
+                                    viewBox="0 0 91 91"
+                                    xml:space="preserve"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M45.501,3.171c-23.379,0-42.332,18.952-42.332,42.33c0,23.38,18.953,42.328,42.332,42.328    c23.38,0,42.33-18.948,42.33-42.328C87.831,22.123,68.881,3.171,45.501,3.171z M33,66.425v-41.85l33.068,20.926L33,66.425z"
+                                        fill="#F4767A"
+                                    />
+                                </svg>
+                            </button>
+                            <audio
+                                src="../../../assets/sounds/cantine.mp3"
+                            ></audio>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h4>Maitre</h4>
+                        </td>
+                        <td>
+                            <img
+                                class="obj"
+                                src="../../../assets/images/objets/maitre.jpg"
+                                alt="maitre"
+                            />
+                        </td>
+
+                        <td class="player">
+                            <button class="play-btn" id="play">
+                                <svg
+                                    version="1.1"
+                                    viewBox="0 0 91 91"
+                                    xml:space="preserve"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M45.501,3.171c-23.379,0-42.332,18.952-42.332,42.33c0,23.38,18.953,42.328,42.332,42.328    c23.38,0,42.33-18.948,42.33-42.328C87.831,22.123,68.881,3.171,45.501,3.171z M33,66.425v-41.85l33.068,20.926L33,66.425z"
+                                        fill="#F4767A"
+                                    />
+                                </svg>
+                            </button>
+                            <audio
+                                src="../../../assets/sounds/maître.mp3"
+                            ></audio>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h4>Zoo</h4>
+                        </td>
+                        <td>
+                            <img
+                                class="obj"
+                                src="../../../assets/images/objets/zoo.png"
+                                alt="zoo"
+                            />
+                        </td>
+
+                        <td class="player">
+                            <button class="play-btn" id="play">
+                                <svg
+                                    version="1.1"
+                                    viewBox="0 0 91 91"
+                                    xml:space="preserve"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M45.501,3.171c-23.379,0-42.332,18.952-42.332,42.33c0,23.38,18.953,42.328,42.332,42.328    c23.38,0,42.33-18.948,42.33-42.328C87.831,22.123,68.881,3.171,45.501,3.171z M33,66.425v-41.85l33.068,20.926L33,66.425z"
+                                        fill="#F4767A"
+                                    />
+                                </svg>
+                            </button>
+                            <audio src="../../../assets/sounds/zoo.mp3"></audio>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- autre section -->
+        <section></section>
+        <section></section>
+
+        <script>
+            const players = document.querySelectorAll(".player");
+            players.forEach((player) => {
+                const audio = player.querySelector("audio");
+                const button = player.querySelector("button");
+
+                if (audio && button) {
+                    button.addEventListener("click", () => {
+                        audio.play();
+                    });
+                }
+            });
+        </script>
+    </body>
 </html>

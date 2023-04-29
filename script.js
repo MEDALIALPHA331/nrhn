@@ -21,5 +21,3 @@ switch_btn.onclick = () => {
     //TODO: Maybe add transitions
     root.setProperty("--bkg-img-url", second_url[current]);
 };
-
-/* This Block of code is for  Playing the sound */
